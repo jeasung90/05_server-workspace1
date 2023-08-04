@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>POST 방식으로 요청해보기 앙~</h1>
+	<p>
+		특징1. POST 방식으로 요청시 URL Body 영역에 데이터를 포함시켜서 넘김 <br>
+		=> 사용자가 입력한 값(데이터)들이 URL에 노출되지 않음 <br>
+		=> 즉, 로그인이나 회원가입 같은 경우 POST 방식에 적합함 <br> <br>
+		
+		특징2. Body 영역은 전송하는 길이에 제한이 없음 <br>
+		즉, 게시판 작성 같은 경우 POST 방식이 적합함 <br>
+		
+		특징3. 즐겨찾기 가능하나(단순 url 저장) 데이터가 url에 노출되어있진 않음
+			=> 단, 기존에 봤던 응답화면 볼 수 없을 것. <br>
+			=> 즉, 검색기능 같은 경우에는 post 방식 부적
+			
+		특징4. Time out이 존재하기 때문에 페이지 요청, 기다리는 시간이 있다.
+	</p>
+
+		<h1>[단독] 아이유❤이종석 딱대버려... 충격..</h1>
+	<img alt="" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTRfMjY3%2FMDAxNjg0MDY0MDA2MTQy.9X1mDMFRwndds0mcgHUEyw2N3CPPc3p5_C8sQe2g9o0g.aF3Xz_Q-UAsb5_T6E0ayCyH0nLV-nklpoEuykrHn6EIg.JPEG.bo752%2FFvsJN51aQAEHNWw.jpeg&type=a340">
+	<img alt="" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F213%2F2023%2F05%2F15%2F0001254741_001_20230515151301287.jpg&type=a340">
+		 <br> <label>배후에.. 딱대좌.. 지목.. 평소에 이눔식기 딱대라며 딱대도록 유도한 정황 포착...</label>
+	
+	<h1>딱대계 대부 딱대좌..</h1>
+	<img alt="" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MjFfMTQx%2FMDAxNjIxNTU4MDE3NDgw.xSc7F5vsegWyyNhteiQc-yLmVbiSz2vpnkpZwPJe2r8g.I4dkpq2rE1rtOJ9jB2egvEgo1_FuOMXGcEISSyAb-Xcg.JPEG.eunchoel84%2F%25B9%25B0%25C0%25BD%25C7%25A5.JPG&type=a340">
+		<br> <label>그녀는.. 누구인가.. </label>
+		
+	<form action="/1_Servlet/test2.do" method="POST">
+		<ul>
+			<li>
+				이름 : <input type="text" name="name">
+			</li>
+			<li>
+				성별 : <input type="radio" name="gender" value="M">남자
+					   <input type="radio" name="gender" value="F">여자
+			</li>
+			<li>
+				나이 : <input type="number" name="age">
+			</li>
+			<li>
+				거주지 : 
+				<select name="city">
+					<option>서울</option>
+					<option>경기도</option>
+					<option>강원도</option>
+					<option>충청도</option>
+					<option>경상도</option>
+					<option>전라도</option>
+				</select>
+			</li>
+			<li>
+				키 : <input type="range" name="height" min="140" max="200">
+			</li>
+			<li>
+				좋아하는 음식(모두 고르시오) : <br>
+				<input type="checkbox" name="food" value="한식">한식
+				<input type="checkbox" name="food" value="중식">중식
+				<input type="checkbox" name="food" value="양식">양식
+				<input type="checkbox" name="food" value="일식">일식
+				<input type="checkbox" name="food" value="분식">분식
+			</li>
+			<li>
+				<input type="submit">
+				<input type="reset" >
+			</li>
+		</ul>
+
+	</form>
+	
+</body>
+</html>
