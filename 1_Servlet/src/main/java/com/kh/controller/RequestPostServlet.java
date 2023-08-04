@@ -34,7 +34,8 @@ public class RequestPostServlet extends HttpServlet {
 		
 		// POST 방식 요청 같은 경우는
 		// 뽑기 "전" *************에 인코딩 설정해야함 => UTF-8로! 앙 되부루
-		request.setCharacterEncoding("UTF-8");
+
+
 		
 		String name = request.getParameter("name"); // "차은우" | ""
 		String gender = request.getParameter("gender"); // "M" | "F" | null
